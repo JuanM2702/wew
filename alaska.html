@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilo" />
+    <script src="/carrito.js"></script>
+
+    <title>Alaska</title>
+  </head>
+  <body>
+    <header>
+      <h1>Copos de nieve</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="/index">Inicio</a></li>
+        <li><a href="/Destinos">Destinos</a></li>
+        <li><a href="/acerca">Acerca de</a></li>
+        <li><a href="/contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <center>
+      <h1>Alaska</h1>
+    </center>
+    <div class="contenedor">
+      <div class="texto">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+          repellendus aut, animi cumque inventore quaerat corporis ipsa
+          consequuntur quo esse odio voluptatum, ad ratione voluptatibus nihil
+          iusto libero reiciendis sapiente voluptate deleniti quae mollitia
+          dolor! Nobis magni, nostrum ratione, perspiciatis ducimus dolores ad
+          optio dolore incidunt necessitatibus voluptatum excepturi a magnam
+          numquam illo quia nam consequuntur, ea est aliquid ex delectus
+          pariatur sunt voluptatibus! Nostrum molestiae recusandae alias
+          distinctio atque illum veniam fuga autem libero et. Numquam
+          dignissimos exercitationem illum asperiores explicabo porro modi velit
+          recusandae cupiditate, neque deleniti maxime blanditiis deserunt
+          necessitatibus eligendi vero cum maiores nostrum commodi ad vel
+          aliquam omnis eius? Ab perferendis sint quaerat sapiente aspernatur
+          laborum reprehenderit explicabo fuga beatae itaque mollitia hic,
+          quasi, deserunt error corrupti esse deleniti. Aperiam animi vel non
+          nemo ducimus! Blanditiis, numquam voluptas. Quos perspiciatis velit
+          nam delectus tenetur quis possimus ut quisquam sunt, culpa enim vero
+          minus blanditiis sapiente corrupti ipsa debitis natus, illo suscipit,
+          deserunt explicabo quas! Reprehenderit ipsa ab voluptatem facere
+          maiores libero quibusdam vitae, minima architecto ipsam, dolore eius
+          nemo! Pariatur eius deleniti cum labore, illum odio ad repellat nulla
+          dolores nam eaque. Tempore quasi reprehenderit repellendus ex natus,
+          vero voluptatum aspernatur. Quos porro earum similique.
+        </p>
+      </div>
+      <div class="imagen">
+        <img src="/alaska.jpg" alt="Alaska" />
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <div class="imagen">
+        <img src="/alaska1.jpg" alt="Alaska" />
+      </div>
+      <div class="texto">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam,
+          repudiandae. Nostrum, ratione deleniti deserunt eum beatae ad. Iure
+          dolores odio nihil sed sit atque aspernatur accusamus quod! Ipsum
+          animi nobis quas possimus quidem dolorem aliquid, perferendis quaerat
+          beatae voluptatum eveniet in porro harum culpa quasi unde saepe minus
+          laudantium cupiditate officia. Animi impedit eum hic enim praesentium
+          quae voluptatum dolorum nesciunt laboriosam, excepturi officiis fugiat
+          sapiente quisquam iusto, autem ipsam? Consectetur numquam debitis
+          cupiditate nobis, dicta ad ea optio sunt facere voluptate architecto
+          aspernatur, necessitatibus suscipit possimus beatae animi blanditiis
+          repudiandae qui fugiat deleniti autem illo atque. Repellat atque,
+          repellendus quasi quo quos dicta expedita veritatis accusantium sed
+          est aliquid praesentium natus voluptates doloribus ullam veniam ex?
+          Itaque quo mollitia eaque rerum iusto molestias eos. Aliquid beatae
+          consequatur magni exercitationem, fugit recusandae hic vero quam, sed
+          veniam eveniet nesciunt, eligendi numquam quod dolorum delectus et
+          architecto officiis nam minus. Ad ex expedita ipsum veniam? Saepe rem
+          molestiae sunt itaque optio quia corporis cumque aliquid est unde in,
+          nostrum nulla obcaecati maxime quos nemo ratione veniam. Delectus
+          placeat dolores ea quod voluptatem perferendis ipsum consequatur fuga
+          accusamus sunt. Facere, maxime aperiam tenetur necessitatibus,
+          corrupti nisi cumque illum consequuntur dignissimos sint labore.
+        </p>
+      </div>
+    </div>
+    <div class="video">
+      <embed src="/nieve.mp4" width="500" height="500" />
+    </div>
+    <p>Precio: $80,000</p>
+    <button onclick="agregarAlCarrito('Alaska', 80000)">
+      Agregar al Carrito
+    </button>
+<!--    <script>
+      // carrito.js
+
+      // Agregar al carrito mediante una solicitud POST
+      function agregarAlCarrito(destino, precio) {
+        fetch("/agregar-al-carrito", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ destino, precio }),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            // Redirigir a la página del carrito después de agregar al carrito
+            window.location.href = "/carrito";
+          })
+          .catch((error) => console.error("Error:", error));
+      }
+    </script>
+-->
+    <footer>
+      <p>&copy; 2023 Lugares por Visitar Juan Monroy Universidad ECCI</p>
+    </footer>
+  </body>
+</html>

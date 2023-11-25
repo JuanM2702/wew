@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilo">
+    <title>Acerca</title>
+    <link rel="icon" href="/Logo.jpg">
+</head>
+<body>
+    <header>
+        <h1>Acerca </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="/Destinos">Destinos</a></li>
+            <li><a href="/acerca">Acerca de</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor">
+        <div class="texto">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sed est, autem, soluta mollitia fugiat iure quo earum adipisci tempore quam distinctio corrupti maxime molestias exercitationem recusandae. Quidem ex itaque quod dolores iure, fuga optio! Accusamus, repellendus corporis. Aperiam maiores sit excepturi molestias odio accusamus, deserunt quas a, assumenda fuga adipisci fugiat inventore soluta facere, impedit natus aspernatur delectus eum nostrum nihil quo. Nihil non nam impedit sint nostrum adipisci ipsam odio blanditiis ea expedita ab veniam, incidunt rem consectetur ut quo accusantium distinctio libero nulla officiis soluta necessitatibus, amet sed minus. Non culpa sapiente similique fugiat quod sed ratione nam ipsa accusantium hic, distinctio vero quasi porro! Dolor vitae vel cum mollitia eaque totam odit modi enim asperiores tenetur unde odio nostrum doloribus amet eius, ut sit, maxime magni tempore itaque, nobis obcaecati saepe harum dolores! Ipsam esse sequi vel atque quam, nobis unde ipsa voluptatem consequuntur hic, cum aut eligendi saepe, porro laboriosam ratione provident. Tenetur iusto ratione facere ex sint praesentium mollitia! Exercitationem reprehenderit voluptas laudantium a ducimus eos ut odio, ea consequatur tenetur facilis minima quos esse voluptatum iure, facere omnis alias perspiciatis quia ab iusto! Dolore accusantium est, doloribus illum minus praesentium nisi blanditiis voluptatibus!</p>
+        </div>
+    </div>
+    <center>
+        <hr size="5" width="60%">
+        
+        <form class="reserva-form" onsubmit="return mostrarMensaje()">
+            <h2>Ser contactado</h2>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="fecha">Fecha de reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="personas">Cantidad de días</label>
+            <input type="number" id="personas" name="personas" min="1" required>
+
+            <button type="submit" class="btn-reserva">CONOCE MAS</button>
+            <a href="/Destinos" class="btn">Volver</a>
+        </form>
+        
+        <hr size="5" width="75%">
+    </center>
+    <footer>
+        <p>&copy; 2023 Lugares por Visitar</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Reserva</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" href="/Logo.jpg">
+  <link rel="stylesheet" href="/estilo">
+  <script src="./js/script.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/index">Inicio</a></li>
+            <li><a href="/Destinos">Destinos</a></li>
+            <li><a href="/acerca">Acerca de</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <center>
+        <hr size="5" width="60%">
+        
+        <form class="reserva-form" onsubmit="return mostrarMensaje()">
+            <h2>Realizar Reserva</h2>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="fecha">Fecha de reserva:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="personas">Cantidad de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" required>
+
+            <button type="submit" class="btn-reserva">CONOCE MAS</button>
+            <a href="./Destinos.html" class="btn">Volver</a>
+        </form>
+        
+        <hr size="5" width="75%">
+    </center>
+    <footer>
+        <p>&copy; 2023 Lugares por Visitar</p>
+    </footer>
+</body>
+</html>
